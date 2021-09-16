@@ -1,3 +1,5 @@
+package Q2;
+
 import java.util.Scanner;
 import java.io.File;
 import java.io.FileWriter;
@@ -12,8 +14,8 @@ public class Q2 {
 
         try {
 
-            Scanner sc = (new Scanner(new File("../Assignment1-GeneFeature/vertebrates.txt")));
-            String write_fn = "./neg.fasta";
+            Scanner sc = (new Scanner(new File("./Assignment1-GeneFeature/vertebrates.txt")));
+            String write_fn = "./Q2/neg.fasta";
             FileWriter writer = createFile(write_fn);
             
             String seq = "", sub_seq = "", line = "";
