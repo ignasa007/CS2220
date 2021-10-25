@@ -45,7 +45,6 @@ def plot_confusion_matrix(cm, classes, normalize=False, title='Confusion matrix'
     fmt = '.2f' if normalize else 'd'
     thresh = cm.max() / 2.
     
-    # Labeling the plot
     for i, j in itertools.product(range(cm.shape[0]), range(cm.shape[1])):
         plt.text(j, i, format(cm[i, j], fmt), fontsize = 20,
                  horizontalalignment="center",
